@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100%;
+}
+
+.container {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #008080;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #008080;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#addTodo:hover{
+    background-color: #014D4E;
+}
+
+button.delete {
+    background-color: Red;
+}
+button.delete:hover{
+    background-color: darkred;
+}
+
+button.edit{
+    background-color: darkorange;
+}
+button.edit:hover{
+    background-color: darkgoldenrod;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.done {
+    background-color: lightgreen;
+}
+
+.done span {
+    text-decoration: line-through;
+    color: black;
+}
+
+
+.deleted {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+li span{
+    display: flex;
+    flex-grow: 1;
+    padding-left: 15px;
+}
+
+.date-time-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  /* Additional styles for the task count container */
+  .task-count-container {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: right;
+    color: #666;
+  }
+
